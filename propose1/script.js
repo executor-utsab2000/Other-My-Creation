@@ -10,6 +10,6 @@ document.querySelector("#play").addEventListener("click", () => {
   }, 4000);
 
   setTimeout(() => {
-    document.querySelector("#heartDiv").style.display = "grid";
+    document.querySelector("#heartDiv").style.display = "block";
   }, 5000);
 });
