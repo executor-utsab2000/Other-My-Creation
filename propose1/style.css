@@ -4,16 +4,15 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow: hidden;
-}
+body {}
 
 .mainContainer {
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .buttonGraphicContainer {
@@ -31,6 +30,9 @@ body {
 }
 
 .graphicContainer>.inner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     bottom: 0;
     width: fit-content;
@@ -63,13 +65,13 @@ img {
 }
 
 .button {
-    width: 100vw;
+    /* width: 100vw; */
     z-index: 10 !important;
     margin-top: -30px;
     padding-top: 50px;
     display: flex;
     justify-content: center;
-    height: 30vh;
+    /* height: 30vh; */
 }
 
 .play {
@@ -87,4 +89,38 @@ img {
 
 #song {
     display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+.caption1 {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Rozha One", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.btnDivContainer {
+
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+.btnDivContainer>.inner {
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    min-width: 200px;
+    width: 50vw;
+    height: max-content;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff000;
+    background-image: linear-gradient(315deg, #fff000 0%, #ed008c 74%);
 }
