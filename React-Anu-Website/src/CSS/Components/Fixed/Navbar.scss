@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
+
 .bg {
     position: fixed;
     top: 0;
@@ -17,11 +19,13 @@
     text-transform: capitalize;
 }
 
-.navBrand {
+.navbar-brand {
+    font-family: "Alkatra", system-ui;
     color: black !important;
     font-size: 1.2rem;
     font-weight: 700;
     text-decoration: none;
+    letter-spacing: 1px;
 }
 
 
