@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { poems } from '../Data/Poems'
+import { poems } from '../Data/poems'
 import '../CSS/Sections/DedicatedPoems.scss'
 import PoemItems from '../Components/PoemItems'
 import { PoemCustomise } from '../JS/PoemCustomise'
