@@ -1,0 +1,40 @@
+.landingContainer {
+    padding-top: 200px;
+    height: 100vh;
+}
+
+.text1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.text2 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.imgContainer {
+    margin-top: 20px;
+    display: flex;
+
+    img {
+        width: 60%;
+        filter: drop-shadow(5px 5px 5px #000000);
+    }
+}
+
+.socials {
+    display: flex;
+    margin-top: 50px;
+
+    i {
+        font-size: 25px;
+    }
+}
+
+svg {
+    position: relative;
+    top: -6rem;
+    filter: drop-shadow(5px 5px 9px #000000);
+}
