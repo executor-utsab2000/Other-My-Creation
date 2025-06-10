@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../CSS/Components/Fixed/Navbar.scss'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -12,16 +13,17 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <Link className="nav-link" to={'/'} >Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Moments</a>
+                            <Link className="nav-link" to={'/about'} >About Us</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">About</a>
+                            <Link className="nav-link" to={'/who-is-she'} >Who is She</Link>
                         </li>
+
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Dedicated Poems</a>
+                            <Link className="nav-link" to={'/dedicated-poems'} >Dedicated Poems</Link>
                         </li>
                     </ul>
                 </div>

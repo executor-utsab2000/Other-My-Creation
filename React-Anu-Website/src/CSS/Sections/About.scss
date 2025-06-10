@@ -1,0 +1,21 @@
+.about {
+
+
+    .header {
+        font-family: "Kalam", cursive;
+        font-weight: 800;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .content {
+        font-family: "Ubuntu", sans-serif;
+        padding-bottom: 30px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .imgAbout {
+        filter: drop-shadow(5px 5px 9px #000000);
+    }
+}

@@ -1,0 +1,46 @@
+.whoIsShe {
+    .header {
+        font-family: "Kalam", cursive;
+        font-weight: 800;
+        font-size: 30px;
+    }
+
+    .content {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .imgContainer {
+        // background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+
+        .imgGallary {
+            min-width: 250px;
+            // background-color: yellow;
+            width: 70vw;
+            display: flex;
+            flex-wrap: wrap;
+
+
+            .masonry {
+                column-count: 3;
+                column-gap: 10px;
+
+                img {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    border-radius: 8px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .masonry {
+                    column-count: 2;
+                }
+            }
+
+
+        }
+    }
+}

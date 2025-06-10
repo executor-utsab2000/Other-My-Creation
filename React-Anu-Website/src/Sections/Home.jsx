@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
 
-    <div className="container landingContainer">
+    <div className="container landingContainer containerMain">
       <div className="row">
         <div className="col-lg-6 order-1 order-lg-0">
           <div className="text1">আমার প্রিয়তমা ❤️🫵🌹</div>
