@@ -1,0 +1,39 @@
+.dedicatedPoems {
+    .header {
+        font-family: "Galada", cursive;
+        font-weight: 800;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .poemItems {
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        min-width: 200px;
+        max-width: 100%;
+        margin-bottom: 20px;
+
+        .titleDiv {
+
+            .title {
+                font-weight: 700;
+                // font-size: 15px;
+            }
+
+            button {
+                font-weight: 700;
+                font-size: 12px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+
+        &:hover {
+            background-color: #f5ebe0;
+        }
+    }
+
+}
+.poemModel{
+    font-weight: 700;
+}
