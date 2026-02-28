@@ -1,14 +1,23 @@
+/* ========================= */
+/* GLOBAL RESET */
+/* ========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html,
 body {
-    overflow: hidden;
+    max-width: 100%;
+    overflow-x: hidden;
+    /* prevent horizontal scroll */
     font-family: sans-serif;
-    background: linear-gradient(to bottom, #fff6f9, #ffe6ef);
+    background-color: #FADADD;
+    background-image: linear-gradient(147deg, #FADADD 0%, #fc6c85 74%);
 }
+
 
 /* ========================= */
 /* 💋 INTRO PAGE */
@@ -31,7 +40,7 @@ body {
 
 /* Floating emojis */
 .introPage::before {
-    content: "💋 💖 🌹😘🌹🫠 💕 💋  💖";
+    content: "💋 💖 🌹 😘 🫠 💕 💋 💖";
     position: absolute;
     top: -50px;
     font-size: 30px;
@@ -59,8 +68,8 @@ body {
     background: white;
     padding: 25px;
     border-radius: 25px;
-    width: 85%;
-    max-width: 320px;
+    width: 100%;
+    max-width: 350px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
@@ -93,114 +102,123 @@ body {
     transform: scale(1.08);
 }
 
+
+/* ========================= */
+/* 💍 PROPOSAL SECTION */
+/* ========================= */
+/* ========================= */
+/* GLOBAL RESET */
+/* ========================= */
+
+
 /* ========================= */
 /* 💍 PROPOSAL SECTION */
 /* ========================= */
 
 .proposalSection {
     display: none;
+    position: relative;
 }
 
 .mainContainer {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 15px;
+
     display: flex;
     flex-direction: column;
+
     justify-content: center;
+    /* 🔥 vertical center */
     align-items: center;
-    gap: 25px;
-    position: relative;
+    /* 🔥 horizontal center */
 }
+
+/* GRAPHIC CONTAINER */
 
 .graphicContainer {
-    height: 70vh;
+    width: 100%;
+    max-width: 900px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    margin-top: 40px;
 }
 
-.topHeartGif {
-    position: absolute;
-    top: 80px;
-    /* push downward */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70px;
-}
-
-.graphicContainer>.inner {
+.graphicContainer .inner {
     position: relative;
     display: flex;
     align-items: flex-end;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 10%;
-    /* increased size */
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
 }
+
+/* ========================= */
+/* ❤️ HEART */
+/* ========================= */
+
+.heartDiv {
+    position: absolute;
+    top: -70px;
+    left: 60%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.heartImage {
+    width: 110px;
+}
+
+/* ========================= */
+/* 👦 BOY (REFERENCE HEIGHT) */
+/* ========================= */
+
+/*
+We control height using clamp.
+Boy is base height.
+Girl is 85% of boy.
+*/
 
 video {
-    width: 25vw;
-    min-width: 200px;
+    height: clamp(280px, 50vw, 500px);
+    width: auto;
+    object-fit: contain;
 }
 
-img {
-    width: 10vw;
-    min-width: 80px;
+/* ========================= */
+/* 👧 GIRL (ALWAYS SMALLER) */
+/* ========================= */
+
+.girlImg {
+    height: calc(clamp(280px, 50vw, 500px) * 0.85);
+    width: auto;
+    object-fit: contain;
+    margin-left: -20px;
+    /* slight overlap */
 }
 
-.heartDiv {
-    display: none;
-    position: absolute;
+/* ========================= */
+/* 💌 FINAL QUESTION */
+/* ========================= */
 
-    top: -2%;
-    /* vertical middle area */
-    left: 60%;
-    /* horizontal center */
-    transform: translate(-50%, -50%);
-
-    width: 150px;
-    /* control size */
-    pointer-events: none;
-}
-
-.heartDiv img {
-    min-width: 150px;
-    width: 12vw;
-    height: auto;
-}
-
-.heartDiv {
-    opacity: 0;
-    transition: 0.6s ease;
-}
-
-.heartDiv.show {
-    opacity: 1;
-}
-
-/* FINAL QUESTION (NO OVERLAP NOW) */
 .final-question {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-size: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    padding: 20px;
+
+    font-family: 'Comic Sans MS', cursive;
+    font-size: clamp(14px, 4vw, 20px);
+    line-height: 1.7;
     text-align: center;
     color: #ff4d8c;
-    padding: 18px 30px;
-    line-height: 1.5;
-    margin-top: 15px;
 
     background: linear-gradient(145deg, #fff0f5, #ffe6f2);
-    border-radius: 40px;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
 
-    box-shadow:
-        0 8px 20px rgba(255, 105, 180, 0.3),
-        0 0 15px rgba(255, 182, 193, 0.4);
-
-    letter-spacing: 1px;
-
+    word-wrap: break-word;
     opacity: 0;
-    visibility: hidden;
+    /* visibility: hidden; */
     transition: 0.6s ease;
 
     animation: cuteFloat 3s ease-in-out infinite;
@@ -225,17 +243,40 @@ img {
     }
 }
 
-/* 📱 Mobile Fix */
-@media (max-width: 480px) {
+/* ========================= */
+/* 📱 RESPONSIVE FIX */
+/* ========================= */
 
-    .final-question {
-        font-size: 12px;
-        /* smaller text */
-        padding: 14px 18px;
-        /* smaller box */
-        border-radius: 25px;
-        margin-top: 10px;
-        line-height: 1.4;
+@media (max-width: 450px) {
+
+    video {
+        height: clamp(240px, 60vw, 400px);
     }
 
+    .girlImg {
+        height: calc(clamp(240px, 60vw, 400px) * 0.85);
+        margin-left: -12px;
+    }
+
+    .final-question {
+        padding: 15px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 330px) {
+
+    video {
+        height: clamp(220px, 65vw, 350px);
+    }
+
+    .girlImg {
+        height: calc(clamp(220px, 65vw, 350px) * 0.85);
+        margin-left: -8px;
+    }
+
+    .final-question {
+        font-size: 14px;
+        padding: 12px;
+    }
 }

@@ -35,7 +35,7 @@ startBtn.addEventListener("click", () => {
 
     // Show final question
     setTimeout(() => {
-      finalQuestion.classList.add("show");
+      finalQuestion.classList.add("show"); 
     }, 8000);
 
   }, 600);
