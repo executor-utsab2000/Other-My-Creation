@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Hidden Audio Players -->
+    <audio id="page3Audio" loop>
+        <source src="heartBeat.mp3" type="audio/mpeg">
+        <!-- Fallback romantic song - your browser may not support audio -->
+    </audio>
+
+    <audio id="page4Audio" loop>
+        <source src="pg4.mp3" type="audio/mpeg">
+        <!-- Fallback romantic song - your browser may not support audio -->
+    </audio>
+
+
+    <div>
+        <!-- 💋 INTRO PAGE -->
+        <div class="introPage" id="introPage">
+
+            <div>
+                <div class="introTitle">Hii ❤️🥹</div>
+                <div class="subIntro">Click to calculate your love in me ? <br>❤️🥹</div>
+            </div>
+            <div class="envelopeCard p-5">
+                <div class="flex justify-evenly gap-2">
+                    <img src="1.gif" class="envelopeGif" alt="Cute Love GIF" />
+                    <img src="2.gif" class="envelopeGif" alt="Cute Love GIF" />
+                    <img src="3.gif" class="envelopeGif" alt="Cute Love GIF" />
+                </div>
+                <p class="envelopeText">A small bundle of love 🌹 💌</p>
+            </div>
+
+            <button id="startBtn" class="startBtn">
+                Open with a Cute Smile 💋🥹
+            </button>
+
+        </div>
+
+
+
+
+        <div class="introPage" id="page2" style="display:none;">
+            <div>
+                <div class="subIntro">Click below to start the calculation <br>❤️🥹</div>
+            </div>
+            <div class="envelopeCard p-5" id="page2Touch">
+                <div class="flex justify-evenly gap-2">
+                    <img src="4.gif" alt="Cute Love GIF" />
+                </div>
+                <p class="envelopeText">Touch me to start🌹 💌</p>
+            </div>
+        </div>
+
+
+
+        <div class="introPage" id="page3" style="display:none;">
+            <div>
+                <div class="subIntro">Calculation have started...❤️🥹</div>
+                <div class="subIntro">Please wait...🫠🥹🥹</div>
+                <div class="subIntro">It might take a bit long...🫶💖🥹</div>
+            </div>
+            <div class="envelopeCard p-5">
+                <!-- From Uiverse.io by kat_2522 -->
+                <p class="scanEffect w-full"><span>Anu🥹❤️🫶</span></p>
+
+                <!-- From Uiverse.io by milley69 -->
+                <svg class="stacked-area-load-state--css-draw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 711 325"
+                    width="100%" height="100%">
+                    <!-- chart-bg removed (no horizontal lines) -->
+                    <polyline id="chart-line" class="chart-line--static"
+                        style="stroke:#f695a7;stroke-width:10;fill:none;"
+                        points="8.8,175.8 62.4,237.7 116.1,184.7 169.7,175.8 223.3,57 277,176.8 330.6,176.8 384.3,122.5 437.9,176.8 491.6,176.8 545.2,218.4 598.8,122.5 652.5,184.7 706.1,135.1 " />
+                    <polyline id="chart-line" class="chart-line" style="stroke:#e63946;stroke-width:4;fill:none;"
+                        points="8.8,175.8 62.4,237.7 116.1,184.7 169.7,175.8 223.3,57 277,176.8 330.6,176.8 384.3,122.5 437.9,176.8 491.6,176.8 545.2,218.4 598.8,122.5 652.5,184.7 706.1,135.1 " />
+                </svg>
+
+                <!-- From Uiverse.io by mrhyddenn -->
+                <div class="bottom flex justify-center gap-x-5">
+                    <div class="spinner center">
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                    </div>
+                    <div class="textRandom" id="textRandom"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="introPage" id="page4" style="display:none;">
+            <div class="love-card">
+                <div class="heart">💖</div>
+                <div class="heart">💕</div>
+                <div class="heart">💗</div>
+                <div class="heart">💘</div>
+
+                <h1>His love for you is <span class="highlight">Infinite ♾️💖</span></h1>
+
+                <p>Like the stars in the sky, it never ends ✨</p>
+                <p>Like the ocean waves, it keeps coming back to you 🌊💗</p>
+                <p>In every heartbeat, there’s your name ❤️</p>
+                <p>You are not just loved… you are cherished forever 🥺💞</p>
+
+                <button class="love-btn">Forever & Always 💌</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
