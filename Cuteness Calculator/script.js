@@ -95,5 +95,5 @@ document.querySelector('#page2Touch').addEventListener('click', () => {
             document.querySelector('#page3').style.display = "none";
             document.querySelector('#page4').style.display = "flex";
         }
-    }, 1500); // 1 second between messages
+    }, 1500); // 1.5 second between messages
 });
